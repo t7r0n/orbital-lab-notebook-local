@@ -1,36 +1,21 @@
 # Orbital Lab Notebook Local
 
-Offline capsule experiment provenance and reentry-readiness notebook for orbital manufacturing.
-
-This is a local-first, synthetic-data prototype inspired by a company-specific project plan for **Varda Space**. It is built to demonstrate the engineering shape of `Orbital Lab Notebook` without private data, credentials, external APIs, or hosted services.
-
-## Why it matters
-
 Routine orbital manufacturing needs end-to-end traceability from experiment recipe to capsule recovery and material assay.
 
-## What it does
+The demo hook is concrete: A capsule timeline ties orbital conditions, deorbit readiness, and post-landing assay evidence into one notebook.
 
-- Generates deterministic synthetic `capsule experiment` scenarios.
-- Scores each scenario against domain-specific quality gates.
-- Produces evidence-backed findings for realistic failure modes.
-- Writes a static dashboard, JSON reports, benchmark output, and a portable demo pack.
-- Exposes a JSONL tool loop for local agent integration.
+## Thesis
 
-## Metrics
+Offline capsule experiment provenance and reentry-readiness notebook for orbital manufacturing.
 
-- `recipe_traceability`
-- `thermal_excursion_detected`
-- `reentry_readiness`
-- `assay_linkage`
+## Primitives
 
-## Failure modes
+- Seeds `capsule experiment` fixtures for `Orbital Lab Notebook` with both normal operations and faulted paths.
+- Computes `recipe_traceability`, `thermal_excursion_detected`, `reentry_readiness`, and `assay_linkage` from deterministic inputs so the result can be reproduced exactly.
+- Stress-tests `missing_chain_of_custody`, `thermal_excursion`, `deorbit_window_conflict`, and `assay_mismatch` as named failure classes rather than vague edge cases.
+- Packages `Orbital Lab Notebook Local` artifacts for code review, live demo, and regression comparison.
 
-- `missing_chain_of_custody`
-- `thermal_excursion`
-- `deorbit_window_conflict`
-- `assay_mismatch`
-
-## Quickstart
+## Reproduce locally
 
 ```bash
 uv sync --extra dev
@@ -42,7 +27,7 @@ uv run orbital-notebook benchmark --iterations 100
 uv run orbital-notebook export-demo-pack
 ```
 
-## Expected outputs
+## Review packet
 
 - `data/scenarios.json`
 - `outputs/summary.json`
@@ -52,7 +37,7 @@ uv run orbital-notebook export-demo-pack
 - `outputs/benchmark.json`
 - `outputs/demo-pack.zip`
 
-## Validation
+## Confidence checks
 
 ```bash
 uv run ruff check .
@@ -62,6 +47,6 @@ uv run orbital-notebook verify
 uv run orbital-notebook benchmark --iterations 100
 ```
 
-## Demo hook
+## Data limits
 
-A capsule timeline ties orbital conditions, deorbit readiness, and post-landing assay evidence into one notebook.
+Every example in `orbital-lab-notebook-local` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
