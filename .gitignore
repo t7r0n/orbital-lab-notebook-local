@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+.ruff_cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+data/
+outputs/
+runs/
+*.duckdb
+*.sqlite3
+*.log

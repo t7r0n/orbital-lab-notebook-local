@@ -1,0 +1,32 @@
+{
+  "repo": "orbital-lab-notebook-local",
+  "package": "orbital_lab_notebook_local",
+  "cli": "orbital-notebook",
+  "company": "Varda Space",
+  "title": "Orbital Lab Notebook Local",
+  "tagline": "Offline capsule experiment provenance and reentry-readiness notebook for orbital manufacturing.",
+  "problem": "Routine orbital manufacturing needs end-to-end traceability from experiment recipe to capsule recovery and material assay.",
+  "project": "Orbital Lab Notebook",
+  "plan_slug": "varda",
+  "scenario": "capsule experiment",
+  "fixture_count": 140,
+  "clean_count": 35,
+  "metrics": [
+    "recipe_traceability",
+    "thermal_excursion_detected",
+    "reentry_readiness",
+    "assay_linkage"
+  ],
+  "failure_modes": [
+    "missing_chain_of_custody",
+    "thermal_excursion",
+    "deorbit_window_conflict",
+    "assay_mismatch"
+  ],
+  "wow": "A capsule timeline ties orbital conditions, deorbit readiness, and post-landing assay evidence into one notebook.",
+  "sources": [
+    "https://www.varda.com/",
+    "https://www.space.com/varda-in-space-manufacturing-capsule-reentry-photos",
+    "https://www.nasa.gov/wp-content/uploads/2026/01/flight-opportunities-newsletter-january-2026.pdf"
+  ]
+}
