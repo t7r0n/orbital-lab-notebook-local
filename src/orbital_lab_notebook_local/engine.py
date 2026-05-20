@@ -116,7 +116,7 @@ def render_evidence_pack(config, summary: SuiteSummary, reports: list[ScenarioRe
     lines = [
         f"# {config.title} Evidence Pack",
         "",
-        f"Company: {config.company}",
+        f"Project family: {config.company}",
         f"Project: `{config.project}`",
         f"Pass gates: {summary.pass_gates}",
         f"Recall: {summary.recall}",

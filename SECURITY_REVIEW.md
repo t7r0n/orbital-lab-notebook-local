@@ -23,4 +23,4 @@ No reportable security findings were identified for the public release.
 
 ## Residual Risk
 
-This is a local prototype, not a production integration with Varda Space. A production version would need authentication, tenant isolation, rate limits, formal privacy review, logging policy, and validation against private ground truth.
+This is a local prototype, not a production orbital-manufacturing integration. A production version would need authentication, tenant isolation, rate limits, formal privacy review, logging policy, and validation against private ground truth.
